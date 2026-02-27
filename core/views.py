@@ -24,3 +24,6 @@ class IndexView(FormView):
     def form_invalid(self, form, *args, **kwargs):
         messages.error(self.request, 'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.')
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
+    
+class TesteView(FormView):
+    template_name = "teste.html"
