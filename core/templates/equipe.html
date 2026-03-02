@@ -12,7 +12,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInRight" data-wow-delay="0.8s">
               <div class="team-img">
-                <img class="img-fluid" src="{% f.imagem.thumb.url %}" alt="{{ f.nome }}">
+                <img class="img-fluid" src="{{ f.imagem.thumb.url }}" alt="{{ f.nome }}">
               </div>
               <div class="contetn">
                 <div class="info-text">
@@ -28,6 +28,7 @@
               </div>
             </div>
             <!-- Team Item Ends -->
+          {% endfor %}   
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ from django.urls import reverse_lazy
 from django.contrib import messages
 
 from .models import Servico, Funcionario
-from .froms import ContactForm
+from .forms import ContactForm
 
 class IndexView(FormView):
     template_name = 'index.html'
